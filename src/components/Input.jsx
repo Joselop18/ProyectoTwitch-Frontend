@@ -18,7 +18,7 @@ export const Input = ({
         onBlurHandler(event.target.value, field);
     }
 
-  return (
+    return (
     <>
         <div className="auth-form-lable">
             <span>{label}</span>
@@ -29,7 +29,7 @@ export const Input = ({
                     type ={type}
                     value={value}
                     onChange={handleValueChange}
-                    onBlut={handleInputBlur}
+                    onBlur={handleInputBlur}
                     rows={5}
                     style={{maxWidth: '400px'}}
                 />
@@ -46,5 +46,5 @@ export const Input = ({
             </span>
         </div>
     </>
-  )
+    )
 }
