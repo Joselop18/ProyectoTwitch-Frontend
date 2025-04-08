@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Logo } from "./logo";
+import { Logo } from "./Logo";
 import { Input } from "./Input";
 import {
     emailValidationMessage,
