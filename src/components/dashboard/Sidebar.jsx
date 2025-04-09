@@ -1,0 +1,21 @@
+export const Sidebar = ({channels}) => {
+    
+    if (!channels) {
+        return null
+    }
+
+    return(
+        <div className="sidebar-container">
+            <span className="sidebar-title">Sugeridos</span>
+            <span className="sidebar-subtitle">Canales que sigo</span>
+            {channels.map((channel) => (
+                return(
+                    <div key={channel.id} className="sidebar-list-i">
+                        <span className="sidebar-list-username">{channel.username}</span>
+                        <span className="sidebar-list-status"></span>
+                    </div>
+                )
+            ))}
+        </div>
+    )
+}

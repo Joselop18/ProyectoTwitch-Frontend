@@ -63,7 +63,7 @@ export const Register = ({switchAuthHandler}) => {
                     isValid = validatePassword(value);
                     break;
                 case 'passwordConfir':
-                    isValid = passwordConfirmationMessage(formState.password.value, value);
+                    isValid = validateConfirPassword(formState.password.value, value);
                     break;
                 default:
                     break;
