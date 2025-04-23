@@ -61,7 +61,7 @@ export const Login = ({ switchAuthHandler }) => {
         login(fromState.email.value, fromState.password.value)
     }
 
-    const isSubmitButtonDisabled = isLoading || !fromState.email.isValid || fromState.password.isValid;
+    const isSubmitButtonDisabled = isLoading || !fromState.email.isValid || !fromState.password.isValid;
 
     return(
         <div className="login-container">
